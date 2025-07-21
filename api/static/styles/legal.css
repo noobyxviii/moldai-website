@@ -1,0 +1,61 @@
+:root {
+    --bg-color: #fff; /* Background Color */
+    --accent-bg-color: #D9D5FF; /* Container color, for example the container under the title "Why spend time on complex frameworks when 90% of startsups fail?"*/
+    --main-text-color: #221F45; /* Text Color */
+    --accent-text-color: #fff; /* Button text color */
+    --accent-color: #000; /* Accent Color (Pink) */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: transparent
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-bg-color); 
+    border-radius: 7.5px;
+}
+
+.sub-title-style {
+    color: var(--main-text-color);
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.paragraph-text-style {
+    margin: 0;
+    color: var(--main-text-color);
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.text-wrapper {
+    padding-bottom: 50px; 
+    position: absolute; 
+    top: 50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 750px; 
+    max-width: 90vw; 
+    height: max-content;
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+}
