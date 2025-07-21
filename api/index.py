@@ -11,7 +11,7 @@ def landing():
 def privacypolicy():
     return render_template("privacypolicy.html")
 
-@app.route("/download", method=["GET"])
+@app.route("/download", methods=["GET"])
 def download():
     return redirect("https://apps.apple.com/us/app/stepr-walk-more-pedometer/id6748864383")
 
