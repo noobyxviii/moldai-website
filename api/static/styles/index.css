@@ -1,0 +1,421 @@
+:root {
+    --bg-color: #e5e5e5; /* Background Color */
+    --accent-bg-color: #051521; /* Container color, for example the container under the title "Why spend time on complex frameworks when 90% of startsups fail?"*/
+    --main-text-color: #051521; /* Text Color */
+    --accent-text-color: #fff; /* Button text color */
+    --accent-color: #051521; /* Accent Color (Pink) */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+.demo-section .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.demo-section .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    width: 0;
+}
+
+.title-style {
+    color: var(--main-text-color);
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 65px;
+}
+
+.sub-title-style {
+    color: var(--main-text-color);
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.paragraph-text-style {
+    margin: 0;
+    color: var(--main-text-color);
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.input-style {
+    padding: 15px;
+    width: 220px;
+    height: 20px;
+    color: white;
+    background: #222222;
+    border: none;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.btn-style {
+    width: 300px;
+    height: 50px;
+    color: var(--accent-text-color);
+    background: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.main-screen {
+    min-height: 100vh;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.relative-center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    max-width: 1280px;
+    min-width: 900px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+
+header ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header ul li {
+    margin: 0 25px;
+}
+
+header ul li a {
+    color: var(--main-text-color);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.main-content {
+    position: relative;
+    top: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    max-width: 1280px;
+    min-width: 900px;
+    display: grid;
+    grid-template-columns: 55% 5% 40%;
+    grid-template-rows: 200px;
+    grid-auto-rows: max-content;
+}
+
+.main-content .section-title {
+    position: relative;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.main-content .section-title .main-title {
+    position: relative;
+    bottom: 25px;
+    margin: 0;
+}
+
+.main-content .section-title-image-spacing {
+    grid-row: 1 / 5;
+    grid-column: 2 / 3;
+}
+
+.main-content .section-image {
+    grid-row: 1 / 5;
+    grid-column: 3 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content .section-paragraph {
+    position: relative;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content .section-paragraph p {
+    color: var(--main-text-color);
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.main-content .section-join-pyship {
+    position: relative;
+    height: 50px;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.main-content .section-join-pyship .main-btn s {
+    color: black;
+}
+
+.footer-section {
+    overflow: hidden;
+    position: absolute;
+    top: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 250px;
+    background-color: var(--accent-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-section .footer-grid {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 60vw; 
+    height: 60%; 
+    display: grid; 
+    grid-template-columns: 45% 25% 25%;
+    grid-row: 100%;
+}
+
+.footer-section .footer-grid .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: left; 
+    gap: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        min-width: 0;
+    }
+
+    .main-content {
+        top: 50px;
+        width: 80vw;
+        max-width: 1280px;
+        min-width: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px;
+        grid-auto-rows: max-content;
+    }
+
+    .main-content .section-image {
+        position: relative;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        grid-column: 1 / 1;
+        grid-row: 5 / 6;
+    }
+    .footer-section {
+        position: relative;
+        top: 200px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    header .btn-anchor {
+        display: none;
+    }
+
+    header ul {
+        right: 0
+    }
+
+    .main-content {
+        top: 100px;
+    }
+    
+    .main-content .section-image {
+        top: 50px;
+        width: 75%;
+    }
+
+    .footer-section {
+        position: relative;
+        top: 200px;
+        height: 300px;
+    }
+
+    .footer-section .footer-grid  {
+        height: max-content;
+        top: 10%;
+        left: 10vw;
+        width: 80vw;
+        grid-template-columns: 100%;
+        grid-auto-rows: max-content;
+        row-gap: 40px;
+    }
+
+    .footer-section .footer-grid .footer-wrapper {
+        align-items: center;
+    }
+
+    .footer-section .footer-grid .footer-wrapper p{
+        text-align: center !important;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    .main-content .section-title .main-title{
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .main-content {
+        position: relative;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        grid-template-rows: auto;
+    }
+
+    .main-content .section-title .main-title {
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .main-content .section-paragraph p {
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+    }
+    .main-content .download-restmode {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-content .section-join-pyship {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .main-content .section-join-pyship form .join-pyship-input {
+        width: calc(80% - 30px) !important;
+    }
+
+    .main-content .section-join-pyship form .join-pyship-email-btn {
+        max-width: 20%;
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    .main-content .section-other-makers {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-content .section-other-makers p {
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (max-width: 475px) {
+    .main-content .section-image img {
+        width: 130% !important;
+    }
+    .find-us-section #find-us-h2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+header ul li a:hover {
+    transition-duration: 0.3s;
+    color: var(--accent-color);
+}
