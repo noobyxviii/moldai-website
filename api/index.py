@@ -7,13 +7,9 @@ app.secret_key = "stepr.app"
 def landing():
     return render_template("index.html")
 
-@app.route("/privacy-policy", methods=["GET"])
-def privacypolicy():
-    return render_template("privacypolicy.html")
-
 @app.route("/download", methods=["GET"])
 def download():
-    return redirect("https://apps.apple.com/us/app/stepr-walk-more-pedometer/id6748864383")
+    return redirect("https://apps.apple.com/us/app/glupi/id6749968777")
 
 if __name__ == "__main__":
-    app.run(host = "0.0.0.0", port = 3000)
+    app.run(host = "0.0.0.0", port = 3000, debug = True)

@@ -1,7 +1,7 @@
 :root {
-    --bg-color: #e5e5e5; /* Background Color */
-    --accent-bg-color: #051521; /* Container color, for example the container under the title "Why spend time on complex frameworks when 90% of startsups fail?"*/
-    --main-text-color: #051521; /* Text Color */
+    --bg-color: #fff; /* Background Color */
+    --accent-bg-color: #000; /* Container color, for example the container under the title "Why spend time on complex frameworks when 90% of startsups fail?"*/
+    --main-text-color: #000; /* Text Color */
     --accent-text-color: #fff; /* Button text color */
     --accent-color: #051521; /* Accent Color (Pink) */
 }
