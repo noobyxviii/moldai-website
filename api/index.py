@@ -7,9 +7,13 @@ app.secret_key = "stepr.app"
 def landing():
     return render_template("index.html")
 
+@app.route("/privacy", methods=["GET"])
+def privacy():
+    return render_template("privacypolicy.html")
+
 @app.route("/download", methods=["GET"])
 def download():
-    return redirect("https://apps.apple.com/us/app/glupi/id6749968777")
+    return redirect("https://apps.apple.com/us/app/totsy-baby-food-scanner/id6751812972")
 
 if __name__ == "__main__":
     app.run(host = "0.0.0.0", port = 3000, debug = True)
