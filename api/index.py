@@ -13,7 +13,7 @@ def privacy():
 
 @app.route("/download", methods=["GET"])
 def download():
-    return redirect("https://apps.apple.com/us/app/totsy-baby-food-scanner/id6751812972")
+    return redirect("https://apps.apple.com/us/app/moldai-mold-identifier/id6752491972")
 
 if __name__ == "__main__":
     app.run(host = "0.0.0.0", port = 3000, debug = True)
